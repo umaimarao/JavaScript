@@ -1,12 +1,53 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Calculator</title>
 </head>
 <body>
-    
-    <h1>JavaSript</h1>
+
+    <div id="calculator">
+        <h1>Calculator</h1>
+
+        <a id="google" href="https://www.google.com" target="_blank">
+            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+        </a>
+
+        <div id="screen">0</div>
+
+        <div id="buttons">
+            <button class="memory" onclick="memoryRecall()">MR</button>
+            <button class="memory" onclick="memoryMinus()">M-</button>
+            <button class="memory" onclick="memoryPlus()">M+</button>
+            <button class="memory" onclick="clearEntry()">CE</button>
+            <button class="on" onclick="clearAll()">ON/C</button>
+
+            <button onclick="press('7')">7</button>
+            <button onclick="press('8')">8</button>
+            <button onclick="press('9')">9</button>
+            <button class="operation" onclick="percent()">%</button>
+            <button class="operation" onclick="squareRoot()">√</button>
+
+            <button onclick="press('4')">4</button>
+            <button onclick="press('5')">5</button>
+            <button onclick="press('6')">6</button>
+            <button class="operation" onclick="chooseOperator('*')">×</button>
+            <button class="operation" onclick="chooseOperator('/')">÷</button>
+
+            <button onclick="press('1')">1</button>
+            <button onclick="press('2')">2</button>
+            <button onclick="press('3')">3</button>
+            <button class="operation tall" onclick="chooseOperator('-')">−</button>
+            <button class="operation tall" onclick="chooseOperator('+')">+</button>
+
+            <button onclick="press('0')">0</button>
+            <button onclick="press('.')">.</button>
+            <button onclick="changeSign()">+/−</button>
+            <button class="operation" onclick="deleteNum()">DEL</button>
+            <button class="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
