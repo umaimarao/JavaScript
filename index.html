@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 43-48</title>
+</head>
+<body>
+
+    <!-- Question 1: Link Alert -->
+    <h2>Question 1: Link Alert</h2>
+    <a href="#" onclick="linkAlert()">Yeh link hai, click karein</a>
+
+    <hr>
+
+    <!-- Question 2: Mobile Phone Lookup -->
+    <h2>Question 2: Mobile Phone Lookup</h2>
+    <p>Mobile image par click karein:</p>
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=150" alt="iPhonePlus" width="100" onclick="phoneAlert()" style="cursor: pointer;">
+    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=150" alt="GalaxyS6" width="100" onclick="phoneAlert()" style="cursor: pointer;">
+
+    <hr>
+
+    <!-- Question 3: Student Records Table -->
+    <h2>Question 3: Student Records</h2>
+    <table border="1" cellpadding="5" id="studentTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Question 4: Mouseover Image Change -->
+    <h2>Question 4: Mouseover Image</h2>
+    <img id="myImage" src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=200" onmouseover="changePic()" onmouseout="resetPic()" width="150" style="cursor: pointer;">
+
+    <hr>
+
+    <!-- Question 5: Counter -->
+    <h2>Question 5: Counter</h2>
+    <p>Counter Value: <span id="counterValue">0</span></p>
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
+
+    <!-- JavaScript File link -->
+    <script src="app.js"></script>
+</body>
+</html>
