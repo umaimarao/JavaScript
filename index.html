@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Assignment 49-52</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f0ff;
+            margin: 0;
+            padding: 25px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6741a5;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        h2 {
+            color: #6741a5;
+            border-bottom: 2px solid #e5dcfa;
+            padding-bottom: 10px;
+        }
+
+        input {
+            width: 95%;
+            padding: 11px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #7652b5;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #50318b;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #7652b5;
+            color: white;
+        }
+
+        #signupResult {
+            background: #f3f0ff;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        #editForm {
+            background: #f3f0ff;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #7652b5;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>JavaScript Assignment 49-52</h1>
+
+    <!-- Question 1 -->
+
+    <div class="box">
+        <h2>Q1. Signup Form</h2>
+
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="signupResult"></div>
+    </div>
+
+
+    <!-- Question 2 -->
+
+    <div class="box">
+        <h2>Q2. Read More</h2>
+
+        <p>
+            JavaScript is a programming language used to make websites interactive.
+
+            <span id="moreText" style="display:none;">
+                It allows users to interact with web pages and makes websites more dynamic.
+            </span>
+        </p>
+
+        <button onclick="readMore()" id="readBtn">
+            Read More
+        </button>
+    </div>
+
+
+    <!-- Question 3 -->
+
+    <div class="box">
+        <h2>Q3. Student Details</h2>
+
+        <form id="studentForm">
+
+            <input type="text" id="studentName"
+                placeholder="Student Name" required>
+
+            <input type="text" id="studentClass"
+                placeholder="Class" required>
+
+            <input type="text" id="studentRoll"
+                placeholder="Roll Number" required>
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Roll No.</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable"></tbody>
+        </table>
+
+        <form id="editForm" style="display:none;">
+
+            <h3>Edit Student Details</h3>
+
+            <input type="text" id="editName" required>
+
+            <input type="text" id="editClass" required>
+
+            <input type="text" id="editRoll" required>
+
+            <button type="submit">Update</button>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        JavaScript Assignment 49-52
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
