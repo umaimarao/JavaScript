@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Umaima Student ID Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eadcfb, #fce4ec);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 340px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px #b9a3c9;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #8056ad, #d18bbd);
+            color: white;
+            padding: 22px;
+        }
+
+        .header h2 {
+            margin: 5px;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            margin: 5px;
+            font-size: 12px;
+        }
+
+        .photo {
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            margin-top: -55px;
+            background: #eee;
+        }
+
+        .details {
+            padding: 15px 25px;
+            text-align: left;
+        }
+
+        .details p {
+            border-bottom: 1px solid #eee;
+            padding: 9px 0;
+            font-size: 14px;
+        }
+
+        .details b {
+            color: #8056ad;
+        }
+
+        .role {
+            background: #f2e8fa;
+            color: #8056ad;
+            padding: 7px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .footer {
+            background: #8056ad;
+            color: white;
+            padding: 12px;
+            font-size: 12px;
+        }
+
+        button {
+            background: #8056ad;
+            color: white;
+            border: none;
+            padding: 11px 25px;
+            border-radius: 8px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #59347f;
+        }
+
+        .sample {
+            font-size: 10px;
+            color: #777;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="card">
+
+            <div class="header">
+                <h2>STUDENT ID CARD</h2>
+                <p>STUDENT INFORMATION</p>
+            </div>
+
+            <img src="https://www.facebook.com/photo/?fbid=1094969235985791&set=a.458500322966022&__tn__=%3C">
+
+            <h2>Umaima Rao</h2>
+
+            <span class="role">STUDENT</span>
+
+            <div class="details">
+
+                <p><b>Name:</b> Umaima Rao</p>
+
+                <p><b>Roll Number:</b> 024</p>
+
+                <p><b>Role:</b> Student</p>
+
+                <p><b>Email:</b> umaima@example.com</p>
+
+                <p><b>Card No:</b> UMR-2026-001</p>
+
+            </div>
+
+            <p class="sample">SAMPLE STUDENT CARD • NOT OFFICIAL</p>
+
+            <div class="footer">
+                STUDENT IDENTIFICATION CARD
+            </div>
+
+        </div>
+
+        <button onclick="showCard()">View Card Details</button>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
